@@ -67,7 +67,6 @@
 --------------------------------------------------------------*/
 body {
   color: var(--default-color);
-  background-color: var(--background-color);
   font-family: var(--default-font);
 }
 
@@ -748,9 +747,28 @@ section,
   overflow: hidden;
   padding: 0px;
 }
-
+.hero .hero-wrapper > * {
+  position: relative;
+  z-index: 1;
+}
 .hero .hero-wrapper {
+  position: relative;
   padding: 80px;
+  background-image: url(../img/background/herobg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.hero .hero-wrapper::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
 }
 
 @media (max-width: 992px) {
@@ -1007,7 +1025,6 @@ section,
 
 .hero .upcoming-event {
   color: var(--contrast-color);
-  margin: 30px 0 0;
   /* new style */
   position: relative;
   overflow: hidden;
@@ -2540,7 +2557,7 @@ section,
 }
 
 .stats .highlights-section .highlights-content .highlights-title {
-  font-size: 2.25rem;
+  /* font-size: 2.25rem; */
   font-weight: 700;
   margin-bottom: 1.5rem;
   color: var(--contrast-color);
@@ -2598,6 +2615,7 @@ section,
 .stats .highlights-section .highlights-content .highlights-cta {
   display: flex;
   gap: 1.25rem;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -9553,6 +9571,9 @@ section,
   font-size: 5px;
   color: var(--secondary-color);
 }
+.service-text p{
+  font-size: clamp(0.75rem, 1vw, 0.875rem);
+}
 .service-item .btn {
   position: absolute;
   width: 130px;
@@ -10048,7 +10069,10 @@ section,
     padding: 1.5rem;
   }
 }
-
+/* donation section */
+.donation-section{
+  padding: 80px 0;
+}
 /* highligh */
 .highlight {
   text-decoration: underline;
