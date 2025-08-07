@@ -38,13 +38,6 @@
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
 
-    <!-- =======================================================
-  * Template Name: College
-  * Template URL: https://bootstrapmade.com/college-bootstrap-education-template/
-  * Updated: Jun 19 2025 with Bootstrap v5.3.6
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
   </head>
 
   <body class="index-page">
@@ -53,9 +46,9 @@
         class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-end"
       >
         <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <!-- <img src="assets/img/logo.webp" alt=""> -->
-          <h1 class="sitename">Calvary Chapel</h1>
+
+          <img src="assets/img/ccbc-logo.png" alt="">
+          <h1 class="sitename d-none d-md-block">Calvary Chapel</h1>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -69,12 +62,8 @@
               ></a>
               <ul>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="admissions.html">Admissions</a></li>
-                <li><a href="academics.html">Academics</a></li>
-                <li><a href="faculty-staff.html">Faculty &amp; Staff</a></li>
-                <li>
-                  <a href="campus-facilities.html">Campus &amp; Facilities</a>
-                </li>
+                <li><a href="admissions.html">Doctrinal Statement</a></li>
+                <li><a href="faculty-staff.html">Staff & Teachers</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -83,44 +72,28 @@
                 <i class="bi bi-chevron-down toggle-dropdown"></i
               ></a>
               <ul>
-                <li><a href="classes.html">Classes</a></li>
+                <li><a href="classes.html">Classes Offered</a></li>
                 
               </ul>
             </li>
 
             <li><a href="admission.html">Admission</a></li>
-            <li class="dropdown">
-              <a href="#"
-                ><span>On-The-Field Training</span>
-                <i class="bi bi-chevron-down toggle-dropdown"></i
-              ></a>
-              <ul>
-                <li><a href="news-details.html">News Details</a></li>
-                <li><a href="event-details.html">Event Details</a></li>
-                <li><a href="privacy.html">Privacy</a></li>
-                <li><a href="terms-of-service.html">Terms of Service</a></li>
-                <li><a href="404.html">Error 404</a></li>
-                <li><a href="starter-page.html">Starter Page</a></li>
-              </ul>
-            </li>
+            
 
-            <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown"><a href="#"><span>On-The-Field Training</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <li class="dropdown"><a href="#"><span>Get Involved</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
+                  <li><a href="#">Guest Teachers</a></li>
+                  <li><a href="fieldtraining.html">Plan an Outreach Trip</a></li>
+                  <li><a href="donation.html">Donate</a></li>
+
+                 
                 </ul>
               </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
+             
             </ul>
-          </li> -->
+          </li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -435,7 +408,7 @@
       <!-- donation section -->
       <section id="stats" class="stats section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
-          <div class="row mt-5">
+          <div class="row ">
             <div class="col-lg-12">
               <div
                 class="highlights-section"
@@ -454,7 +427,8 @@
                         contribution makes a difference.
                       </p>
                       <div class="highlights-cta">
-                        <a href="#" class="cta-btn primary">Donate</a>
+                        <a href="donation.html" class="cta-btn primary">Donate</a>
+
                       </div>
                     </div>
                   </div>
@@ -468,15 +442,15 @@
                         >
                           <h3>Donate Now</h3>
                           <div class="d-flex justify-content-between">
-                            <p class="donation-title">Raised</p>
-                            <p class="donation-amount">$45,750</p>
+                            <p class="donation-title mb-0">Raised</p>
+                            <!-- <p class="donation-amount">$45,750</p> -->
                           </div>
                           <div class="donation-bar">
                             <div class="donation-progress"></div>
                           </div>
                           <div class="d-flex justify-content-between">
                             <p class="donation-title">46% of goal</p>
-                            <p class="donation-goal">Goal: $100,000</p>
+                            <!-- <p class="donation-goal">Goal: $100,000</p> -->
                           </div>
                         </div>
                       </div>
@@ -491,13 +465,18 @@
 
       <!-- we offer -->
       <section id="students-life" class="students-life section">
+        <div class="container section-title" data-aos="fade-up">
+        <h2>Classes Offer</h2>
+
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div>
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div
-            class="student-organizations mt-5 pt-4"
+            class="student-organizations  pt-4"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <h3 class="text-center mb-5">Classes Offer</h3>
+            
             <div class="row gy-5 gx-4">
               <div class="col-md-6 col-lg-4">
                 <div
@@ -519,7 +498,9 @@
                   </div>
                   <div class="service-detail">
                     <div class="service-title">
-                      <h3 class="mb-0">SEMESTER A</h3>
+                      <hr class="w-25">
+                      <h4 class="mb-0">SEMESTER A</h4>
+                      <hr class="w-25">
                     </div>
                     <div class="service-text">
                       <p class="text-white mb-0">
@@ -557,7 +538,9 @@
                   </div>
                   <div class="service-detail">
                     <div class="service-title">
-                      <h3 class="mb-0">SEMESTER B</h3>
+                      <hr class="w-25">
+                      <h4 class="mb-0">SEMESTER B</h4>
+                      <hr class="w-25">
                     </div>
                     <div class="service-text">
                       <p class="text-white mb-0">Apologetics</p>
@@ -591,7 +574,9 @@
                   </div>
                   <div class="service-detail">
                     <div class="service-title">
-                      <h3 class="mb-0">SEMESTER C</h3>
+                      <hr class="w-25">
+                      <h4 class="mb-0">SEMESTER C</h4>
+                      <hr class="w-25">
                     </div>
                     <div class="service-text">
                       <p class="text-white mb-0">NT Survey</p>
