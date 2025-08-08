@@ -57,7 +57,14 @@
               </ul>
             </li>
 
-            <li><a href="admission.html">Admission</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Admission</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="nepaliForm.html">Nepali Student</a></li>
+                <li><a href="internationalForm.html">International Student</a></li>
+              </ul>
+            </li>
 
             <li><a href="fieldtraining.html">On-The-Field Training</a></li>
 
@@ -94,19 +101,8 @@
       <section id="contact" class="contact section">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="contact-main-wrapper">
-            <div class="map-wrapper">
-              <iframe
-                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=27.665918553265836,%2085.31568876360181+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-                width="100%"
-                height="100%"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
             <div class="contact-content">
-              <div class="contact-cards-container" data-aos="fade-up" data-aos-delay="300">
+              <div class="contact-cards-container mb-3" data-aos="fade-up" data-aos-delay="300">
                 <div class="contact-card">
                   <div class="icon-box">
                     <i class="bi bi-geo-alt"></i>
@@ -138,37 +134,18 @@
                 </div>
               </div>
 
-              <div class="contact-form-container" data-aos="fade-up" data-aos-delay="400">
-                <h3>Get in Touch</h3>
-                <p>We would love to hear from you. Please contact us should you have any questions</p>
+              <div class="map-wrapper">
+              <iframe
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=27.665918553265836,%2085.31568876360181+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-                <form action="forms/contact.php" method="post" class="php-email-form">
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="" />
-                    </div>
-                    <div class="col-md-6 form-group mt-3 mt-md-0">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="" />
-                    </div>
-                  </div>
-                  <div class="form-group mt-3">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="" />
-                  </div>
-                  <div class="form-group mt-3">
-                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required=""></textarea>
-                  </div>
-
-                  <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                  </div>
-
-                  <div class="form-submit">
-                    <button type="submit">Send Message</button>
-                  </div>
-                </form>
-              </div>
+              
             </div>
           </div>
         </div>
