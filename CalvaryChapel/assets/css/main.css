@@ -745,7 +745,7 @@ section,
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 0px;
+  padding: 0 0 60px;
 }
 .hero .hero-wrapper > * {
   position: relative;
@@ -753,7 +753,7 @@ section,
 }
 .hero .hero-wrapper {
   position: relative;
-  padding: 80px;
+  padding: 180px 80px;
   background-image: url(../img/background/herobg.jpg);
   background-size: cover;
   background-position: center;
@@ -1626,6 +1626,12 @@ section,
 .students-life-block .hero-image-wrapper {
   position: relative;
 }
+
+/* .students-life-block .hero-image-wrapper img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+} */
 
 .students-life-block .hero-image-wrapper .main-image {
   border-radius: 20px;
@@ -5016,7 +5022,7 @@ section,
 
 .faculty--staff .faculty-grid .faculty-card .faculty-image img {
   width: 100%;
-  height: 300px;
+  height: 480px;
   object-fit: cover;
 }
 
@@ -8470,12 +8476,12 @@ section,
   gap: 30px;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .contact .contact-main-wrapper {
     grid-template-columns: 45% 55%;
     min-height: 600px;
   }
-}
+} */
 
 .contact .map-wrapper {
   height: 300px;
@@ -8486,7 +8492,7 @@ section,
 
 @media (min-width: 992px) {
   .contact .map-wrapper {
-    height: 100%;
+    /* height: 100%; */
     position: sticky;
     top: 100px;
   }
@@ -8506,7 +8512,7 @@ section,
 
 @media (min-width: 576px) {
   .contact .contact-cards-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -9483,16 +9489,14 @@ section,
 }
 .service-item .service-img {
   position: absolute;
-  padding: 9px;
   width: 90px;
   height: auto;
-  top: -65px;
+  top: -60px;
   left: 50%;
   border-radius: 8px;
   transform: translateX(-50%);
-  background: #ffffff;
-  box-shadow: 0 0 45px rgba(0, 0, 0, 0.09);
   z-index: 2;
+  box-shadow: 0px 12px 24px -10px rgba(0, 0, 0, 0.29);
 }
 
 .service-item .service-detail {
@@ -9617,6 +9621,7 @@ section,
   background-size: cover;
   background-position: center;
   padding: 40px 0;
+  margin-bottom: 30px;
 }
 .inner-top .bg-1 {
   position: absolute;
@@ -10044,7 +10049,7 @@ section,
 }
 
 .services .services-grid .service-card .card-content .service-title {
-  font-size: 1.3rem;
+  font-size: 1.08rem;
   font-weight: 600;
   margin-bottom: 1rem;
   line-height: 1.4;
@@ -10084,6 +10089,7 @@ section,
 /* donation section */
 .donation-section{
   padding: 80px 0;
+  margin: 60px 0 0;
 }
 
 
@@ -10177,6 +10183,7 @@ section,
 
 /* gallary */
 .gallery-container {
+  padding-top: 60px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
