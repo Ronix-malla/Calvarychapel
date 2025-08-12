@@ -794,6 +794,9 @@ section,
     padding: 100px 0 60px;
     text-align: center;
   }
+  .class-card{
+    min-height: auto !important;
+  }
 }
 
 .hero .hero-wrapper .hero-content h1 {
@@ -2653,7 +2656,7 @@ section,
   display: inline-flex;
   align-items: center;
   padding: 1rem 2rem;
-  border-radius: 2rem;
+  border-radius: 6px;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -9710,14 +9713,15 @@ section,
   border-radius: 15px;
   box-shadow: 0px 3px 10px rgba(0, 58, 102, 0.3);
   padding: 36px 20px 20px 20px;
+  min-height: 384.84px;
   position: relative;
   margin-bottom: 47px;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.5s ease;
 }
-/* .class-card:hover {
+.class-card:hover {
 
-  box-shadow: 0px 1px 4px rgba(0, 58, 102, 0.1);
-} */
+  box-shadow: 0px 1px 4px rgba(0, 58, 102, 0.2);
+}
 .class-card .class-title {
   position: absolute;
   top: -17px;
@@ -9836,14 +9840,16 @@ section,
   padding-bottom: 12px;
 }
 .btn-primary-1 {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  padding: 16px 14px;
-  transition: all 0.3s ease;
-  border-radius: 6px;
-  width: 100%;
+     background: var(--accent-color);
+    color: var(--contrast-color);
+    padding: 14px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid var(--accent-color);
 }
+
 
 .btn-primary-1:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 15%);
@@ -10170,9 +10176,13 @@ section,
 }
 
 .mission .mission-content .mission-title-container .mission-icon {
+  display:flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--secondary-color);
   border: 2px solid var(--secondary-color);
-  padding: 10px 15px;
+  height: 55px;
+  width: 55px;
   border-radius: 12px;
   margin-right: 1rem;
   transition: all 0.3s ease;
