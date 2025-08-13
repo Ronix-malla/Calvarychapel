@@ -91,6 +91,24 @@ h6 {
   font-family: var(--heading-font);
 }
 
+.btn-primary-main {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 14px 30px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid var(--accent-color);
+}
+
+.btn-primary-main:hover {
+  background: transparent;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  color: var(--accent-color);
+}
+
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -9839,24 +9857,6 @@ section,
   margin: 0;
   padding-bottom: 12px;
 }
-.btn-primary-1 {
-     background: var(--accent-color);
-    color: var(--contrast-color);
-    padding: 14px 30px;
-    border-radius: 6px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    border: 2px solid var(--accent-color);
-}
-
-
-.btn-primary-1:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  color: white;
-}
 
 /* financial information */
 .financial-card {
@@ -9883,8 +9883,14 @@ section,
   list-style: none;
   position: relative;
 }
-.financial-card .card-back ul li::before {
+.financial-card .card-back .tick-sign li::before {
   content: "\2713";
+  color: green;
+  font-weight: bold;
+  margin-right: 8px;
+}
+.financial-card .card-back .cross-sign li::before {
+  content: "\2717";
   color: var(--secondary-color);
   font-weight: bold;
   margin-right: 8px;
