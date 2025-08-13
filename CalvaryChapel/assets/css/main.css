@@ -92,6 +92,7 @@ h6 {
 }
 
 .btn-primary-main {
+  width: 100%;
   background: var(--accent-color);
   color: var(--contrast-color);
   padding: 14px 30px;
@@ -99,7 +100,7 @@ h6 {
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--accent-color) !important;
 }
 
 .btn-primary-main:hover {
@@ -477,11 +478,11 @@ h6 {
 }
 .footer .footer-about .logo {
   line-height: 1;
-  margin-bottom: 25px;
+  margin-bottom: 16px;
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
+  max-height: 60px;
   margin-right: 6px;
 }
 
@@ -812,7 +813,7 @@ section,
     padding: 100px 0 60px;
     text-align: center;
   }
-  .class-card{
+  .class-card {
     min-height: auto !important;
   }
 }
@@ -3719,7 +3720,24 @@ section,
   }
 
   .leadership .team-card {
-    height: 380px;
+    height: auto !important;
+  }
+
+  .leadership .team-card .card-front,
+  .leadership .team-card .card-back {
+    position: relative;
+    bottom: auto;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .leadership .team-card .card-back {
+    display: block;
+    transition: none;
+  }
+
+  .leadership .team-card:hover .card-back {
+    bottom: auto;
   }
 }
 
@@ -9737,7 +9755,6 @@ section,
   transition: box-shadow 0.5s ease;
 }
 .class-card:hover {
-
   box-shadow: 0px 1px 4px rgba(0, 58, 102, 0.2);
 }
 .class-card .class-title {
@@ -9867,15 +9884,32 @@ section,
   flex-direction: column !important;
   justify-content: start !important;
   align-items: start !important;
-  border-bottom: 4px solid var(--secondary-color);
+  border-bottom: 4px solid var(--accent-color);
 }
-.financial-card .card-back h4 {
-  margin-bottom: 23px !important;
-  padding-bottom: 12px !important;
+.financial-card .national-wrapper h4 {
   width: 100%;
+  margin-bottom: 23px !important;
+  padding-bottom: 10px !important;
   border-bottom: 0.8px solid #d1cfcf;
 }
+.internationcard-wrapper h4 {
+  width: 100%;
+  border-bottom: none !important;
+  margin-bottom: 0px !important;
+}
+.internationcard-wrapper {
+  display: flex;
 
+  align-items: center;
+  width: 100%;
+  margin-bottom: 23px !important;
+  padding-bottom: 16px !important;
+  border-bottom: 0.8px solid #d1cfcf;
+}
+.internationcard-wrapper img {
+  width: 42px;
+  height: 42px;
+}
 .financial-card .card-back .bio span,
 .financial-card .card-back ul li {
   color: #666;
@@ -10182,7 +10216,7 @@ section,
 }
 
 .mission .mission-content .mission-title-container .mission-icon {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-color);
